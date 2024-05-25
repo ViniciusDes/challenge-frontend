@@ -29,13 +29,6 @@ export const RadioGroup: React.FC<RadioGroupProps> = ({
             label={option.label}
           />
         ))}
-        {/* <FormControlLabel
-          value="female"
-          control={<RadioMUI />}
-          label="Female"
-        />
-        <FormControlLabel value="male" control={<RadioMUI />} label="Male" />
-        <FormControlLabel value="other" control={<RadioMUI />} label="Other" /> */}
       </RadioGroupMUI>
     </FormControl>
   );

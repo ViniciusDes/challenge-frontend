@@ -67,7 +67,7 @@ export const useUsers = (): UseUsersInterface => {
 
       dispatch(setIsLoading(true));
       await usersService.deleteUser(idUser);
-      toast.success("Usuário apagado com sucesso!");
+      toast.success("Usuário deletado com sucesso!");
       callback();
     } catch (error) {
       errorAlertMessage(error);

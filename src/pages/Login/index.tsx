@@ -5,22 +5,17 @@ import { Box } from "@mui/material";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import { FormDataInterface } from "./types";
+import { schema } from "./schema";
 
 const Login: React.FC = () => {
   const { validateLogin } = useAuth();
-  const schema = yup
-    .object({
-      email: yup.string().required("Campo obrigatório"),
-      password: yup.string().required("Campo obrigatório"),
-    })
-    .required();
 
   const { handleSubmit, control } = useForm({
     resolver: yupResolver(schema),
   });
 
-  function handleMakeLogin(formData: any) {
+  function handleMakeLogin(formData: FormDataInterface) {
     validateLogin(formData.email, formData.password);
   }
 
@@ -60,6 +55,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default () => {
-  return <Login />;
-};
+export default Login;
