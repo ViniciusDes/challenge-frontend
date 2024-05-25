@@ -11,7 +11,6 @@ const usersSlice = createSlice({
   initialState,
   reducers: {
     setListOfUsers(state, action: PayloadAction<SetListOfUsers>) {
-      console.log("action", action.payload);
       state.listOfUsers = action.payload;
     },
 

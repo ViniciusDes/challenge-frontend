@@ -21,8 +21,6 @@ const Login: React.FC = () => {
   });
 
   function handleMakeLogin(formData: any) {
-    console.log(formData);
-
     validateLogin(formData.email, formData.password);
   }
 
