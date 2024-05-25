@@ -1,0 +1,121 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Anderson",
+      "sobrenome": "Araujo Varejão",
+      "tipoUsuario": "Administrador",
+      "email": "usuario1@email.com.br",
+      "senha": "123445",
+      "ativo": true
+    },
+    {
+      "nome": "João",
+      "sobrenome": "Pedro Silva",
+      "email": "usuario2@email.com.br",
+      "senha": "123445",
+      "tipoUsuario": "Administrador",
+      "ativo": true,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nome": "Diane",
+      "sobrenome": "Pacheco",
+      "tipoUsuario": "Usuário padrão",
+      "email": "usuario3@email.com.br",
+      "senha": "123445",
+      "ativo": true
+    },
+    {
+      "id": "4",
+      "nome": "Andreia",
+      "sobrenome": "Silveira Souza",
+      "tipoUsuario": "Usuário padrão",
+      "email": "usuario4@email.com.br",
+      "senha": "123445",
+      "ativo": false
+    },
+    {
+      "id": "5",
+      "nome": "Camila",
+      "sobrenome": "Lindoso Cortez",
+      "tipoUsuario": "Usuário padrão",
+      "email": "usuario5@email.com.br",
+      "senha": "123445",
+      "ativo": true
+    },
+    {
+      "id": "6",
+      "nome": "Antonio",
+      "sobrenome": "Neto da Silva Fernandes",
+      "tipoUsuario": "Administrador",
+      "email": "usuario6@email.com.br",
+      "senha": "123445",
+      "ativo": true
+    },
+    {
+      "id": "7",
+      "nome": "Cleo",
+      "sobrenome": "Prado Douglas",
+      "tipoUsuario": "Usuário padrão",
+      "email": "usuario7@email.com.br",
+      "senha": "123445",
+      "ativo": false
+    },
+    {
+      "id": "8",
+      "nome": "Maria",
+      "sobrenome": "Clara Araujo Martins",
+      "tipoUsuario": "Administrador",
+      "email": "usuario8@email.com.br",
+      "senha": "123445",
+      "ativo": false
+    },
+    {
+      "nome": "Vinícius ",
+      "sobrenome": "Silva da Cruz",
+      "email": "sullivan@saib.com.br",
+      "senha": "12334",
+      "tipoUsuario": "Usuário Padrão",
+      "ativo": false,
+      "id": "11"
+    },
+    {
+      "nome": "Edna Domingas",
+      "sobrenome": "Ribeiro Bastos ",
+      "email": "bastoosedna@gmail.com",
+      "senha": "1234",
+      "tipoUsuario": "Usuário Padrão",
+      "ativo": true,
+      "id": "12"
+    },
+    {
+      "nome": "Vinícius",
+      "sobrenome": "Silva da Cruz",
+      "email": "usuario1@email.com.br",
+      "senha": "123445",
+      "tipoUsuario": "Usuário Padrão",
+      "ativo": true,
+      "id": "13"
+    },
+    {
+      "nome": "Vinícius",
+      "sobrenome": "Silva da Cruz",
+      "email": "usuario1@email.com.br",
+      "senha": "123445",
+      "tipoUsuario": "",
+      "ativo": true,
+      "id": "14"
+    },
+    {
+      "nome": "Vinícius",
+      "sobrenome": "Silva da Cruz",
+      "email": "usuario1@email",
+      "senha": "123445",
+      "tipoUsuario": "",
+      "ativo": true,
+      "id": "15"
+    }
+  ]
+}
