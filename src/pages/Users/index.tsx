@@ -35,7 +35,11 @@ const Users: React.FC = () => {
       toast.warn("Usuário sem permissão para essa ação, verifique");
       return;
     }
-    deleteUser(user.id, () => getUsers());
+    deleteUser(user.id, () =>
+      setTimeout(() => {
+        getUsers();
+      }, 1000)
+    );
   };
 
   const gridColumnsDef: ColumnDef[] = [
