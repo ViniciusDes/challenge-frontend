@@ -4,7 +4,7 @@ As principais tecnologias do projeto foram: React, Redux, Material-UI, Vite, Typ
 
 A versão publicada na AWS pode ser acessada no link: https://main.d38eh4bc2o9cnm.amplifyapp.com/
 
-Coloquei o server-json em um app express e publicar em um servidor gratuito, se caso a primeira requisição demorar é por conta disso, demora cerca de 50 segundos
+Coloquei o server-json em um app express e feito deploy em um servidor gratuito, se caso a primeira requisição demorar é por conta disso, demora cerca de 50 segundos
 
 Foi feito a autenticação de usuário é necessário um e-mail existente, podendo usar o e-mail: usuario1@email.com.br e senha: 123445 para acessar o sistema.
 
