@@ -37,6 +37,10 @@ const Users: React.FC = () => {
     }
     deleteUser(user.id, () =>
       setTimeout(() => {
+        /*
+          ESSE TIMEOUT FOI COLOCADO POIS O SERVER EM PRODUÇÃO APOS UM POST/PUT/DELETE NÃO SEI POR QUAL MOTIVO, NÃO RESOLVE UM GET E RETORNA ERRO DESCONHECIDO.
+          SENDO NECESSÁRIO ADICIONAR UM TIMEOUT PARA UM GET APÓS POST/PUT/DELET
+        */
         getUsers();
       }, 1000)
     );

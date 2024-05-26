@@ -41,8 +41,14 @@ const Register: React.FC<RegisterProps> = ({
         id: userSelected?.id,
       },
       () => {
+        setTimeout(() => {
+          getUsers();
+          /*
+            ESSE TIMEOUT FOI COLOCADO POIS O SERVER EM PRODUÇÃO APOS UM POST/PUT/DELETE NÃO SEI POR QUAL MOTIVO, NÃO RESOLVE UM GET E RETORNA ERRO DESCONHECIDO.
+            SENDO NECESSÁRIO ADICIONAR UM TIMEOUT PARA UM GET APÓS POST/PUT/DELET
+          */
+        }, 1000);
         setIsOpen(false);
-        getUsers();
       }
     );
   }
