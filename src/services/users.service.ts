@@ -1,4 +1,4 @@
-import { AxiosInstance, AxiosResponse } from "axios";
+import axios, { AxiosInstance, AxiosResponse } from "axios";
 import { Api } from "./api.service";
 import { UserEntity } from "@/interfaces/entities/user";
 import { CreateUserDto } from "@/interfaces/create-user.dto";
@@ -14,9 +14,8 @@ export class UsersService {
     email: string,
     password: string
   ): Promise<UserEntity[]> {
-    const user = (
-      await this.api.get(`usuarios?email=${email}&senha=${password}`)
-    ).data;
+    const user = (await axios.get(`/usuarios?email=${email}&senha=${password}`))
+      .data;
 
     return user;
   }
