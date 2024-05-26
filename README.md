@@ -1,31 +1,30 @@
-# React + TypeScript + Vite
+# Teste - Registro de usuários
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+As principais tecnologias do projeto foram: React, Redux, Material-UI, Vite, Typescript e React Hook Form.
 
-Currently, two official plugins are available:
+A versão publicada na AWS pode ser acessada no link: https://main.d38eh4bc2o9cnm.amplifyapp.com/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Foi feito a autenticação de usuário é necessário um e-mail existente, podendo usar o e-mail: usuario1@email.com.br e senha: 123445 para acessar o sistema.
 
-## Expanding the ESLint configuration
+### Passos para executar localmente
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Obs: é necessário que tenha o node instalado na versão 18.18.0 ou mais recente
 
-- Configure the top-level `parserOptions` property like this:
+Faça o clone do repositório com o seguinte comando "git clone https://github.com/ViniciusDes/challenge-frontend"
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Acesse a pasta do projeto "cd challenge-frontend/"
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# challenge-frontend
+Instale as dependências do projeto com "npm install" ou "yarn install"
+
+E por fim, execute "yarn dev" para iniciar o projeto, acesse http://localhost:3000/ no seu navegador e verá a aplicação
+
+### Itens para ser notados
+
+Foi feito:
+
+- Validação de login
+- Validação de usuário sem permissão padrão para cadastrar/editar/deletar
+- Validação de e-mail duplicado no cadastro de usuário.
+- No input de filtro de usuários, é feito a busca a cada onChange, mas foi adicionado um debounce, para que só seja executado a função quando o usuário "parar" de digitar, se observar na aba network do dev tools, poderá notar a quantidade de caracteres x quantidade de requisições.
+- Uso de componente Loading para ser notado "carregamento" quando está aguardando resposta da API/para o usuario.
+- Paginação na listagem de usuários
